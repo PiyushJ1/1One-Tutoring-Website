@@ -78,11 +78,10 @@ export default function Home() {
             <div className={styles.serviceCard}>
               <div className={styles.serviceImageContainer}>
                 <Image
-                  src="/maths.avif"
-                  alt=""
-                  layout="responsive"
+                  src="/maths.png"
+                  alt="Mathematics Tutoring"
                   width={600}
-                  height={600}
+                  height={400}
                   className={styles.serviceImage}
                 />
               </div>
@@ -93,7 +92,7 @@ export default function Home() {
                 <p><strong> Mathematics (Years 2–10)</strong></p>
                 <p><strong>Year 11: </strong> 
                   General,
-                  Advanced,
+                  Advanced, and
                   Extension 1
                 </p>
               </div>
@@ -102,10 +101,10 @@ export default function Home() {
             <div className={styles.serviceCard}>
               <div className={styles.serviceImageContainer}>
                 <Image
-                  src="/eng.png"
-                  alt=""
-                  width={80}
-                  height={80}
+                  src="/reading.jpeg"
+                  alt="English Tutoring"
+                  width={600}
+                  height={400}
                   className={styles.serviceImage}
                 />
               </div>
@@ -116,7 +115,7 @@ export default function Home() {
                 <p><strong> English (Years 2–10)</strong></p>
                 <p><strong>Year 11: </strong> 
                   Standard,
-                  Advanced,
+                  Advanced, and
                   Extension 1
                 </p>
               </div>
@@ -125,10 +124,10 @@ export default function Home() {
             <div className={styles.serviceCard}>
               <div className={styles.serviceImageContainer}>
                 <Image
-                  src="/science.avif"
-                  alt="Science Tutoring"
-                  width={80}
-                  height={80}
+                  src="/whiteboard.jpg"
+                  alt="Science and Commerce Tutoring"
+                  width={600}
+                  height={400}
                   className={styles.serviceImage}
                 />
               </div>
