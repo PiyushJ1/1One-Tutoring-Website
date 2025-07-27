@@ -208,7 +208,13 @@ export default function Home() {
               <div className={styles.contactItem}>
                 <div className={styles.contactLabel}>
                   <strong>Facebook</strong>
-                  <img src="/facebook.png" alt="facebook icon" className={styles.facebookIcon}/>
+                  <Image 
+                    src="/facebook.png" 
+                    alt="facebook icon" 
+                    className={styles.facebookIcon}
+                    width={24}
+                    height={24}
+                  />
                 </div>
                 <a 
                 href="https://www.facebook.com/profile.php?id=100043367232479" 
