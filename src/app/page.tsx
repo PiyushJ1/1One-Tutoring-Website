@@ -42,7 +42,6 @@ export default function Home() {
             <span className={styles.heroText}>Looking for 1-on-One Tutoring? <br/><br/></span>
             With top ATAR-achieving tutors, we help students <span className={styles.tagline}>Get Ahead and Stay Ahead! </span> <br/>
             Our personalised coaching is mapped to the Australian Curriculum and based in the Hills District. <br/><br/>
-
             We provide top tutoring for students from Years 2 to Year 11 who want to build confidence, improve results, and stay ahead of the curve.
           </h2>
         </div>
@@ -52,81 +51,113 @@ export default function Home() {
         <div className={styles.sectionContainer}>
           <h2 className={styles.sectionTitle}>Our Services</h2>
           <p className={styles.sectionDescription}>
-            Expert tutoring in core subjects to help students excel academically
+            Expert tutoring in core subjects with proven results
           </p>
           
           <div className={styles.servicesGrid}>
             <div className={styles.serviceCard}>
               <div className={styles.serviceImageContainer}>
                 <Image
-                  src="/file.svg"
-                  alt="English Tutoring"
+                  src="/maths.avif"
+                  alt=""
+                  layout="responsive"
+                  width={600}
+                  height={600}
+                  className={styles.serviceImage}
+                />
+              </div>
+              <div className={styles.serviceContent}>
+                <h3>Maths</h3>
+                <p><strong>Expert Guidance</strong></p><br/>
+                <p>Aid with the complexities of problem-solving</p><br/>
+                <p><strong> Mathematics (Years 2–10)</strong></p><br/>
+                <p><strong>Year 11: </strong> 
+                  General,
+                  Advanced,
+                  Extension 1
+                </p>
+              </div>
+            </div>
+
+            <div className={styles.serviceCard}>
+              <div className={styles.serviceImageContainer}>
+                <Image
+                  src="/eng.avif"
+                  alt=""
                   width={80}
                   height={80}
-                  className={styles.serviceIcon}
+                  className={styles.serviceImage}
                 />
               </div>
               <div className={styles.serviceContent}>
                 <h3>English</h3>
-                <p>Comprehensive English tutoring covering reading comprehension, creative writing, essay structure, and literary analysis. Build confidence in communication and critical thinking skills.</p>
+                <p><strong>Develop Excellence</strong></p><br/>
+                <p>Excel in Comprehension and Essay Writing</p><br/>
+                <p><strong> English (Years 2–10)</strong></p><br/>
+                <p><strong>Year 11: </strong> 
+                  Standard,
+                  Advanced,
+                  Extension 1
+                </p>
               </div>
             </div>
 
             <div className={styles.serviceCard}>
               <div className={styles.serviceImageContainer}>
                 <Image
-                  src="/globe.svg"
-                  alt="Mathematics Tutoring"
-                  width={80}
-                  height={80}
-                  className={styles.serviceIcon}
-                />
-              </div>
-              <div className={styles.serviceContent}>
-                <h3>Mathematics</h3>
-                <p>From basic arithmetic to advanced calculus, our math tutoring covers all levels. Focus on problem-solving techniques, conceptual understanding, and exam preparation.</p>
-              </div>
-            </div>
-
-            <div className={styles.serviceCard}>
-              <div className={styles.serviceImageContainer}>
-                <Image
-                  src="/window.svg"
+                  src="/science.avif"
                   alt="Science Tutoring"
                   width={80}
                   height={80}
-                  className={styles.serviceIcon}
+                  className={styles.serviceImage}
                 />
               </div>
               <div className={styles.serviceContent}>
-                <h3>Science</h3>
-                <p>Engaging science tutoring in biology, chemistry, and physics. Hands-on learning approach with practical experiments and real-world applications to spark curiosity.</p>
+                <h3>Science & Commerce</h3>
+                <p><strong>Achieve Your Goals</strong></p><br/>
+                <strong>Science (Years 2–10)</strong><br/><br/>
+                <strong>Commerce (Years 2–10)</strong>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* <section id="flyer" className={styles.flyerSection}>
+      <section id="flyer" className={styles.flyerSection}>
         <div className={styles.sectionContainer}>
-          <h2 className={styles.sectionTitle}>Information Flyer</h2>
-          <div className={styles.flyerPlaceholder}>
-            <div className={styles.flyerContent}>
-              <Image
-                src="/file.svg"
-                alt="Flyer"
-                width={100}
-                height={100}
-                className={styles.flyerIcon}
+          <h2 className={styles.sectionTitle}>Our Information Flyer</h2>
+          <p className={styles.sectionDescription}>
+            Download or view our comprehensive tutoring information guide
+          </p>
+          
+          <div className={styles.flyerContainer}>
+            <div className={styles.flyerHeader}>
+              <h3>Tutoring Programs & Information</h3>
+              <a 
+                href="/Flyer.pdf" 
+                download 
+                className={styles.downloadLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                📥 Download PDF
+              </a>
+            </div>
+            
+            <div className={styles.pdfViewer}>
+              <iframe
+                src="/Flyer.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=page-width&view=Fit"
+                width="100%"
+                height="100%"
+                title="Tutoring Information Flyer"
+                className={styles.pdfFrame}
               />
-              <h3>Download Our Flyer</h3>
-              <p>Get detailed information about our tutoring programs, pricing, and schedules.</p>
-              <button className={styles.downloadButton}>Coming Soon</button>
             </div>
           </div>
         </div>
       </section>
-
+      
+      {/*
       <section id="contact" className={styles.contactSection}>
         <div className={styles.sectionContainer}>
           <h2 className={styles.sectionTitle}>Contact Us</h2>
