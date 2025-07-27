@@ -39,11 +39,11 @@ export default function Home() {
           />
 
           <h1 className={styles.tagline}>
-            Get Ahead and Stay Ahead
+            Get Ahead and Stay Ahead<br/><br/>
           </h1>
 
           <h2 className={styles.description}>
-            <br/>Looking for 1 on One Tutoring? <br/><br/>
+            Looking for 1 on One Tutoring? <br/><br/>
             With top ATAR Achieving Tutors we help students GET AHEAD and STAY AHEAD! <br/><br/>
             Our coaching is mapped to the Aus. Curriculum and based in the Hills District <br/><br/>
             Provide top Tutoring for students in Yrs 2-11 looking to get ahead and stay ahead
@@ -52,7 +52,7 @@ export default function Home() {
       </main>
 
       <section id="services" className={styles.aboutSection}>
-        
+
       </section>
 
     </>
