@@ -1,8 +1,17 @@
+"use client";
+
 import styles from "./Home.module.css"
 import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <>
       <header className={styles.navbar}>
@@ -21,22 +30,31 @@ export default function Home() {
           </div>
 
           <div className={styles.navRight}>
-            <Link href="/">Home</Link>
+            <button onClick={scrollToTop} className={styles.homeButton}>Home</button>
             <Link href="#services">Services</Link>
-            <Link href="#contact">Contact</Link>
             <Link href="#flyer">Flyer</Link>
+            <Link href="#contact">Contact</Link>
           </div>
         </div>
       </header>
 
       <main className={styles.heroContainer}>
+        <div className={styles.heroBackground}>
+          <div className={styles.heroPattern}></div>
+          <div className={styles.heroGradient}></div>
+        </div>
+        
         <div className={styles.contentContainer}>
-          <Image className={styles.heroImage}
-            src="/logo.png"
-            alt=""
-            width={500}
-            height={500}
-          />
+          <div className={styles.heroImageWrapper}>
+            <Image className={styles.heroImage}
+              src="/logo.png"
+              alt=""
+              width={500}
+              height={500}
+              priority
+            />
+            <div className={styles.heroImageGlow}></div>
+          </div>
 
           <h2 className={styles.description}>
             <span className={styles.heroText}>Looking for 1-on-One Tutoring? <br/><br/></span>
@@ -44,6 +62,15 @@ export default function Home() {
             Our personalised coaching is mapped to the Australian Curriculum and based in the Hills District. <br/><br/>
             We provide top tutoring for students from Years 2 to Year 11 who want to build confidence, improve results, and stay ahead of the curve.
           </h2>
+          
+          <div className={styles.heroActions}>
+            <a href="#contact" className={styles.ctaButton}>
+              Get Started Today
+            </a>
+            <a href="#services" className={styles.secondaryButton}>
+              Our Services
+            </a>
+          </div>
         </div>
       </main>
 
@@ -140,7 +167,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                📥 Download PDF
+                Download PDF
               </a>
             </div>
             
@@ -167,13 +194,13 @@ export default function Home() {
           <div className={styles.contactGrid}>
             <div className={styles.contactInfo}>
               <div className={styles.contactItem}>
-                <strong>Email:</strong>
+                <strong>Email</strong>
                 <a href="mailto:1onetutoring@gmail.com" className={styles.contactLink}>
                   1onetutoring@gmail.com
                 </a>
               </div>
               <div className={styles.contactItem}>
-                <strong>Phone:</strong>
+                <strong>Phone</strong>
                 <p>0434 546 464</p>
               </div>
               <div className={styles.contactItem}>
@@ -191,7 +218,7 @@ export default function Home() {
                 </a>
               </div>
               <div className={styles.contactItem}>
-                <strong>Location:</strong>
+                <strong>Location</strong>
                 <p>2 De Villiers Rise, Bella Vista NSW 2153</p>
               </div>
             </div>
