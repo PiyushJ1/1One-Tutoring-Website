@@ -168,7 +168,6 @@ export default function Home() {
             <div className={styles.contactInfo}>
               <div className={styles.contactItem}>
                 <strong>Email:</strong>
-                {/* <p>1onetutoring@gmail.com</p> */}
                 <a href="mailto:1onetutoring@gmail.com" className={styles.contactLink}>
                   1onetutoring@gmail.com
                 </a>
@@ -178,8 +177,19 @@ export default function Home() {
                 <p>0434 546 464</p>
               </div>
               <div className={styles.contactItem}>
-                <strong>Facebook:</strong>
-                <p>fsdfsd</p>
+                <strong className={styles.contactLabel}>
+                  Facebook
+                  <img src="/facebook.png" alt="facebook icon" className={styles.facebookIcon}/>
+                  :
+                </strong>
+                <a 
+                href="https://www.facebook.com/profile.php?id=100043367232479" 
+                target="_blank" 
+                rel="noreferrer" 
+                className={styles.contactLink}
+                >
+                  Visit our page
+                </a>
               </div>
               <div className={styles.contactItem}>
                 <strong>Location:</strong>
