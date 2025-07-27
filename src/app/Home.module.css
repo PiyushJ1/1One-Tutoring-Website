@@ -1,10 +1,12 @@
+/* Navigation */
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 50;
-    padding: 1rem 0;
+    z-index: 100;
+    padding: 0.75rem 0;
+    background: rgb(31, 30, 30);
 }
 
 .navContainer {
@@ -22,12 +24,29 @@
     gap: 1rem;
 }
 
+.navLeft p {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: 1.1rem;
+    font-style: italic;
+    letter-spacing: -0.02em;
+}
+
 .navRight {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
+.navRight a {
+    font-family: var(--font-body);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Hero Section */
 .heroContainer {
     min-height: 100vh;
     display: flex;
@@ -44,10 +63,226 @@
     text-align: center;
     padding: 4rem 1rem;
     max-width: 1200px;
+    margin-top: -1rem;
+}
+
+.heroImage {
+    display: block;
     margin: 0 auto;
 }
 
-.tagline {
-    margin-top: 2rem;
+.heroText {
+    margin-top: 1rem;
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-style: italic;
     color: rgb(229, 188, 96);
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+}
+
+.tagline {
+    margin-top: 1rem;
+    font-family: var(--font-);
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: italic;
+    color: rgb(229, 188, 96);
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+}
+
+.description {
+    font-family: var(--font-body);
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.7;
+    max-width: 850px;
+    margin: 2rem auto 0;
+}
+
+/*
+.sectionContainer {
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.sectionTitle {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: rgb(229, 188, 96);
+    letter-spacing: -0.03em;
+}
+
+.sectionDescription {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 3rem;
+    opacity: 0.8;
+}
+
+.servicesSection {
+    padding: 2rem 0;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.serviceCard {
+    background: var(--background);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(229, 188, 96, 0.2);
+}
+
+.serviceCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.serviceImageContainer {
+    margin-bottom: 1.5rem;
+}
+
+.serviceIcon {
+    filter: brightness(0) saturate(100%) invert(70%) sepia(50%) saturate(1500%) hue-rotate(25deg) brightness(110%) contrast(90%);
+}
+
+.serviceContent h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: rgb(229, 188, 96);
+    letter-spacing: -0.02em;
+}
+
+.serviceContent p {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+.flyerSection {
+    padding: 2rem 0;
+}
+
+.flyerPlaceholder {
+    background: var(--background);
+    border: 2px dashed rgb(229, 188, 96);
+    border-radius: 12px;
+    padding: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.flyerContent {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.flyerIcon {
+    margin-bottom: 1.5rem;
+    filter: brightness(0) saturate(100%) invert(70%) sepia(50%) saturate(1500%) hue-rotate(25deg) brightness(110%) contrast(90%);
+}
+
+.flyerContent h3 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: rgb(229, 188, 96);
+    letter-spacing: -0.02em;
+}
+
+.flyerContent p {
+    font-family: var(--font-body);
+    margin-bottom: 2rem;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.contactSection {
+    padding: 2rem 0;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.contactGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.contactInfo h3,
+.contactForm h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: rgb(229, 188, 96);
+    letter-spacing: -0.02em;
+}
+
+.contactItem {
+    margin-bottom: 1.5rem;
+}
+
+.contactItem strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: rgb(229, 188, 96);
+    font-family: var(--font-heading);
+    font-weight: 500;
+}
+
+.contactItem p {
+    opacity: 0.8;
+    line-height: 1.6;
+    font-family: var(--font-body);
+    margin: 0;
+} */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .servicesGrid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contactGrid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .sectionContainer {
+        padding: 2rem 1rem;
+    }
+    
+    .sectionTitle {
+        font-size: 2rem;
+    }
+    
+    .serviceCard {
+        padding: 1.5rem;
+    }
+    
+    .flyerPlaceholder {
+        padding: 2rem;
+    }
 }
