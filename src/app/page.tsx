@@ -82,7 +82,7 @@ export default function Home() {
             <div className={styles.serviceCard}>
               <div className={styles.serviceImageContainer}>
                 <Image
-                  src="/eng.avif"
+                  src="/eng.png"
                   alt=""
                   width={80}
                   height={80}
@@ -157,7 +157,6 @@ export default function Home() {
         </div>
       </section>
       
-      {/*
       <section id="contact" className={styles.contactSection}>
         <div className={styles.sectionContainer}>
           <h2 className={styles.sectionTitle}>Contact Us</h2>
@@ -167,45 +166,41 @@ export default function Home() {
           
           <div className={styles.contactGrid}>
             <div className={styles.contactInfo}>
-              <h3>Get in Touch</h3>
-              <div className={styles.contactItem}>
-                <strong>Location:</strong>
-                <p>Hills District, Sydney</p>
-              </div>
               <div className={styles.contactItem}>
                 <strong>Email:</strong>
-                <p>info@onetutor.com.au</p>
+                {/* <p>1onetutoring@gmail.com</p> */}
+                <a href="mailto:1onetutoring@gmail.com" className={styles.contactLink}>
+                  1onetutoring@gmail.com
+                </a>
               </div>
               <div className={styles.contactItem}>
                 <strong>Phone:</strong>
-                <p>+61 XXX XXX XXX</p>
+                <p>0434 546 464</p>
               </div>
               <div className={styles.contactItem}>
-                <strong>Years:</strong>
-                <p>Tutoring for Years 2-11</p>
+                <strong>Facebook:</strong>
+                <p>fsdfsd</p>
+              </div>
+              <div className={styles.contactItem}>
+                <strong>Location:</strong>
+                <p>2 De Villiers Rise, Bella Vista NSW 2153</p>
               </div>
             </div>
-
-            <div className={styles.contactForm}>
-              <h3>Send us a Message</h3>
-              <form className={styles.form}>
-                <input type="text" placeholder="Your Name" className={styles.formInput} />
-                <input type="email" placeholder="Your Email" className={styles.formInput} />
-                <input type="text" placeholder="Student Year Level" className={styles.formInput} />
-                <select className={styles.formInput}>
-                  <option value="">Select Subject</option>
-                  <option value="english">English</option>
-                  <option value="math">Mathematics</option>
-                  <option value="science">Science</option>
-                  <option value="multiple">Multiple Subjects</option>
-                </select>
-                <textarea placeholder="Tell us about your tutoring needs..." rows="4" className={styles.formTextarea}></textarea>
-                <button type="submit" className={styles.submitButton}>Send Message</button>
-              </form>
+            <div className={styles.mapWrapper}>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9246.03604112985!2d150.95108851233687!3d-33.72955127316864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129f5f89d31c9b%3A0xcdb0053bab1bc40a!2s1One%20Tutoring!5e1!3m2!1sen!2sau!4v1753605217609!5m2!1sen!2sau"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className={styles.mapEmbed}
+              ></iframe>
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
     </>
   );
 }

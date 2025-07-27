@@ -263,37 +263,38 @@
 }
 
 .flyerContent {
-    max-width: 100%;
+    /* max-width: 100%; */
     width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     text-align: center;
 }
 
-/*
+
 .contactSection {
     padding: 2rem 0;
     background: rgba(0, 0, 0, 0.05);
 }
 
 .contactGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 3rem;
-    margin-top: 3rem;
 }
 
-.contactInfo h3,
-.contactForm h3 {
+.contactInfo h3 {
     font-family: var(--font-heading);
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
     color: rgb(229, 188, 96);
     letter-spacing: -0.02em;
+    justify-content: center;
 }
 
 .contactItem {
-    margin-bottom: 1.5rem;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
 }
 
 .contactItem strong {
@@ -304,12 +305,38 @@
     font-weight: 500;
 }
 
+.contactInfo {
+  display: flex;
+  justify-content: space-between; 
+  gap: 2rem;
+  flex-wrap: wrap; /* allows items to wrap on small screens */
+}
+
+.contactItem {
+  flex: 1;
+  min-width: 200px;
+}
+
 .contactItem p {
     opacity: 0.8;
     line-height: 1.6;
     font-family: var(--font-body);
     margin: 0;
-} */
+}
+
+.contactLink {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contactLink:hover {
+    text-decoration: underline;
+}
+
+.mapWrapper {
+    width: 100%;
+    height: 600px;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -318,8 +345,12 @@
     }
     
     .contactGrid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .contactInfo, .mapWrapper {
+        flex: 1;
     }
     
     .sectionContainer {
