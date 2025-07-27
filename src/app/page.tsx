@@ -92,7 +92,7 @@ export default function Home() {
                 <p><strong> Mathematics (Years 2–10)</strong></p>
                 <p><strong>Year 11: </strong> 
                   General,
-                  Advanced,
+                  Advanced, and
                   Extension 1
                 </p>
               </div>
@@ -115,7 +115,7 @@ export default function Home() {
                 <p><strong> English (Years 2–10)</strong></p>
                 <p><strong>Year 11: </strong> 
                   Standard,
-                  Advanced,
+                  Advanced, and
                   Extension 1
                 </p>
               </div>
