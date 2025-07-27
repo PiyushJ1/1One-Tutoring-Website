@@ -103,8 +103,8 @@ export default function Home() {
                 <Image
                   src="/reading.jpeg"
                   alt="English Tutoring"
-                  width={600}
-                  height={400}
+                  width={100}
+                  height={200}
                   className={styles.serviceImage}
                 />
               </div>
