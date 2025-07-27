@@ -92,7 +92,7 @@ export default function Home() {
                 <p><strong> Mathematics (Years 2–10)</strong></p>
                 <p><strong>Year 11: </strong> 
                   General,
-                  Advanced, and
+                  Advanced,
                   Extension 1
                 </p>
               </div>
@@ -115,7 +115,7 @@ export default function Home() {
                 <p><strong> English (Years 2–10)</strong></p>
                 <p><strong>Year 11: </strong> 
                   Standard,
-                  Advanced, and
+                  Advanced,
                   Extension 1
                 </p>
               </div>
@@ -186,13 +186,31 @@ export default function Home() {
           <div className={styles.contactGrid}>
             <div className={styles.contactInfo}>
               <div className={styles.contactItem}>
-                <strong>Email</strong>
+                <div className={styles.contactLabel}>
+                  <strong>Email</strong>
+                  <Image 
+                    src="/email.png" 
+                    alt="email icon" 
+                    className={styles.contactIcon}
+                    width={24}
+                    height={24}
+                  />
+                </div>
                 <a href="mailto:1onetutoring@gmail.com" className={styles.contactLink}>
                   1onetutoring@gmail.com
                 </a>
               </div>
               <div className={styles.contactItem}>
-                <strong>Phone</strong>
+                <div className={styles.contactLabel}>
+                  <strong>Phone</strong>
+                  <Image 
+                    src="/phone.png" 
+                    alt="phone icon" 
+                    className={styles.contactIcon}
+                    width={24}
+                    height={24}
+                  />
+                </div>
                 <a href="tel:0434546464" className={styles.contactLink}>
                   0434 546 464
                 </a>
@@ -218,8 +236,24 @@ export default function Home() {
                 </a>
               </div>
               <div className={styles.contactItem}>
-                <strong>Location</strong>
-                <p>2 De Villiers Rise, Bella Vista NSW 2153</p>
+                <div className={styles.contactLabel}>
+                  <strong>Location</strong>
+                  <Image 
+                    src="/location.png" 
+                    alt="location icon" 
+                    className={styles.contactIcon}
+                    width={24}
+                    height={24}
+                  />
+                </div>
+                <a 
+                href="https://maps.app.goo.gl/NRDzqoe3o2EjFcF7A" 
+                target="_blank" 
+                className={styles.contactLink} 
+                rel="noreferrer" 
+                >
+                  2 De Villiers Rise, Bella Vista NSW 2153
+                </a>
               </div>
             </div>
             <div className={styles.mapWrapper}>
