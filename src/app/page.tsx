@@ -177,11 +177,10 @@ export default function Home() {
                 <p>0434 546 464</p>
               </div>
               <div className={styles.contactItem}>
-                <strong className={styles.contactLabel}>
-                  Facebook
+                <div className={styles.contactLabel}>
+                  <strong>Facebook</strong>
                   <img src="/facebook.png" alt="facebook icon" className={styles.facebookIcon}/>
-                  :
-                </strong>
+                </div>
                 <a 
                 href="https://www.facebook.com/profile.php?id=100043367232479" 
                 target="_blank" 
