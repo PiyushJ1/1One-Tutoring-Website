@@ -146,32 +146,17 @@ export default function Home() {
         <div className={styles.sectionContainer}>
           <h2 className={styles.sectionTitle}>Our Information Flyer</h2>
           <p className={styles.sectionDescription}>
-            Download or view our comprehensive tutoring information guide
+            Solutions for success
           </p>
           
-          <div className={styles.flyerContainer}>
-            <div className={styles.flyerHeader}>
-              <h3>Tutoring Programs & Information</h3>
-              <a 
-                href="/Flyer.pdf" 
-                download 
-                className={styles.downloadLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Download PDF
-              </a>
-            </div>
-            
-            <div className={styles.pdfViewer}>
-              <iframe
-                src="/Flyer.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=page-width&view=Fit"
-                width="100%"
-                height="100%"
-                title="Tutoring Information Flyer"
-                className={styles.pdfFrame}
-              />
-            </div>
+          <div className={styles.flyerImageContainer}>
+            <Image
+              src="/flyer.png"
+              alt="Tutoring Information Flyer"
+              width={400}
+              height={600}
+              className={styles.flyerImage}
+            />
           </div>
         </div>
       </section>

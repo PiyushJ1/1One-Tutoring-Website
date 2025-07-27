@@ -450,6 +450,21 @@
     padding: 2rem 0;
 }
 
+.flyerImageContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.flyerImage {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
 .flyerContainer {
     max-width: 900px;
     margin: 0 auto;
