@@ -1,3 +1,29 @@
 .navbar {
-    color: white
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    padding: 1rem 0;
+}
+
+.navContainer {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.navLeft {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navRight {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
