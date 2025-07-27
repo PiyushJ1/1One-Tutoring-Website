@@ -103,8 +103,8 @@ export default function Home() {
                 <Image
                   src="/reading.jpeg"
                   alt="English Tutoring"
-                  width={100}
-                  height={200}
+                  width={600}
+                  height={400}
                   className={styles.serviceImage}
                 />
               </div>
@@ -153,9 +153,9 @@ export default function Home() {
             <Image
               src="/flyer.png"
               alt="Tutoring Information Flyer"
-              width={400}
-              height={600}
               className={styles.flyerImage}
+              width={600}
+              height={800}
             />
           </div>
         </div>
