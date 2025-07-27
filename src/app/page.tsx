@@ -5,16 +5,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  };
-
   return (
     <>
-      <header className={styles.navbar}>
+      <header id="home" className={styles.navbar}>
         <div className={styles.navContainer}>
           <div className={styles.navLeft}>
             <Link href="/">
@@ -30,7 +23,7 @@ export default function Home() {
           </div>
 
           <div className={styles.navRight}>
-            <button onClick={scrollToTop} className={styles.homeButton}>Home</button>
+            <Link href="#home">Home</Link>
             <Link href="#services">Services</Link>
             <Link href="#flyer">Flyer</Link>
             <Link href="#contact">Contact</Link>
@@ -97,7 +90,7 @@ export default function Home() {
                 <h3>Maths</h3>
                 <p><strong>Expert Guidance</strong></p><br/>
                 <p>Aid with the complexities of problem-solving</p><br/>
-                <p><strong> Mathematics (Years 2–10)</strong></p><br/>
+                <p><strong> Mathematics (Years 2–10)</strong></p>
                 <p><strong>Year 11: </strong> 
                   General,
                   Advanced,
@@ -120,7 +113,7 @@ export default function Home() {
                 <h3>English</h3>
                 <p><strong>Develop Excellence</strong></p><br/>
                 <p>Excel in Comprehension and Essay Writing</p><br/>
-                <p><strong> English (Years 2–10)</strong></p><br/>
+                <p><strong> English (Years 2–10)</strong></p>
                 <p><strong>Year 11: </strong> 
                   Standard,
                   Advanced,
@@ -140,9 +133,9 @@ export default function Home() {
                 />
               </div>
               <div className={styles.serviceContent}>
-                <h3>Science & Commerce</h3>
-                <p><strong>Achieve Your Goals</strong></p><br/>
-                <strong>Science (Years 2–10)</strong><br/><br/>
+                <h3>Science and Commerce</h3>
+                <p><strong>Achieve Your Goals</strong></p><br/><br/>
+                <strong>Science (Years 2–10)</strong><br/>
                 <strong>Commerce (Years 2–10)</strong>
               </div>
             </div>

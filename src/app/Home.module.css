@@ -365,6 +365,7 @@
 .servicesSection {
     padding: 2rem 0;
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.02) 0%, rgba(229, 188, 96, 0.05) 100%);
+    min-height: 90vh;
 }
 
 .servicesGrid {
