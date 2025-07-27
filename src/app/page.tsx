@@ -58,9 +58,9 @@ export default function Home() {
 
           <h2 className={styles.description}>
             <span className={styles.heroText}>Looking for 1-on-One Tutoring? <br/><br/></span>
-            With top ATAR-achieving tutors, we help students <span className={styles.tagline}>Get Ahead and Stay Ahead! </span> <br/>
-            Our personalised coaching is mapped to the Australian Curriculum and based in the Hills District. <br/><br/>
-            We provide top tutoring for students from Years 2 to Year 11 who want to build confidence, improve results, and stay ahead of the curve.
+            With <span className={styles.font}>top ATAR-achieving tutors</span>, we help students <span className={styles.tagline}>Get Ahead and Stay Ahead! </span> <br/>
+            Our personalised coaching is mapped to the Australian Curriculum and <span className={styles.font}>based in the Hills District.</span> <br/><br/>
+            We provide top tutoring for students from Years 2 to Year 11 who want to <span className={styles.font}>build confidence, improve results, and stay ahead of the curve.</span>
           </h2>
           
           <div className={styles.heroActions}>
@@ -201,7 +201,9 @@ export default function Home() {
               </div>
               <div className={styles.contactItem}>
                 <strong>Phone</strong>
-                <p>0434 546 464</p>
+                <a href="tel:0434546464" className={styles.contactLink}>
+                  0434 546 464
+                </a>
               </div>
               <div className={styles.contactItem}>
                 <div className={styles.contactLabel}>

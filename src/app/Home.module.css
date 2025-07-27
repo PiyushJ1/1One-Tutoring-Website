@@ -1,3 +1,19 @@
+/* Global smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Prevent layout shift during page load */
+/* * {
+    box-sizing: border-box;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 /* Navigation */
 .navbar {
     position: fixed;
@@ -199,16 +215,8 @@
     position: relative;
 }
 
-.heroText::after {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, rgb(229, 188, 96), transparent);
-    border-radius: 1px;
+.font {
+    font-style: italic;
 }
 
 .tagline {
@@ -968,13 +976,11 @@
         transform: none;
     }
     
-              .navRight a:hover,
-     .homeButton:hover {
-         transform: none;
-     }
-     
-     .navRight a:hover::after,
-     .homeButton:hover::after {
+    .navRight a:hover {
+        transform: none;
+    }
+    
+         .navRight a:hover::after {
          width: 0;
      }
      

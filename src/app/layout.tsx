@@ -16,7 +16,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Home | 1One Tutoring",
+  title: "1One Tutoring | Home",
   description: " ",
   icons: {
     icon: "/logo.png",
